@@ -13,4 +13,8 @@
 <li><a href="{% url 'detail' question.id %}">{{ question.question_text }}</a></li>
 <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
 
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
 
